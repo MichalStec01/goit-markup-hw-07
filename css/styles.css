@@ -42,32 +42,68 @@ p {
 img {
     display: block;
 }
-/* ===========header=========== */
-.section-header {
-    background-color: var(--fourth-background-color);
-    border-bottom: 1px solid #ECECEC;
+a {
+    text-decoration: none;
 }
-.container-section-header {
+span {
+    color:var(--third-color);
+}
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
     align-items: center;
 }
-.link-items {
+/* ===========header=========== */
+.header {
+    background-color: var(--fourth-background-color);
+    border-bottom: 1px solid #ECECEC;
+}
+.header__logo {
+    font-size: 26px;
+    font-weight: 700;
+    color:var(--first-color);
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+.header__nav {
     display: flex;
     width: 261px;
     margin-left: 93px;
     margin-right: 350px;
     justify-content: space-between;
 }
-.mail-phone-links {
+.link {
+    font-size: 14px;
+    color:var(--first-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+.link:hover,
+.link:focus {
+    cursor: var(--first-cursor);
+    color:var(--third-color);
+}
+.link--underline::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--third-color);
+    position: absolute;
+    top: 48px;
+}
+.header__contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
     fill: var(--second-color);
 }
-.mail-link {
+.mail {
     display: flex;
     align-items: center;
     margin-right: 30px;
@@ -75,62 +111,78 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone-link {
+.phone {
     display: flex;
     align-items: center;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-.phone-icon {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-}
-.contact-link {
-    text-align: center;
-    padding-top: 3px;
-}
-.logo-item {
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-.link-items {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.mail-link:hover,
-.mail-link:focus,
-.phone-link:hover,
-.phone-link:focus {
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
     cursor:var(--first-cursor);
     color:var(--third-color);
     fill:var(--third-color);
 }
-.main-page::after {
-    content: "";
-    display: block;
-    width: 53px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--third-color);
-    position: absolute;
-    top: 79px;
+.mail__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
-.secondary-page::after {
-    content: "";
-    display: block;
-    width: 58px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--third-color);
-    position: absolute;
-    top: 79px;
+.phone__icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.mail__link,
+.phone__link {
+    font-size: 14px;
+    padding-top: 3px;
+    color:var(--second-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail__link:hover,
+.phone__link:hover,
+.mail__link:focus,
+.phone__link:focus {
+    cursor:var(--first-cursor);
+    color:var(--third-color);
+    fill:var(--third-color);
+}
+/* ===========portfolio buttons=========== */
+.section-main-buttons {
+    background-color: var(--first-background-color);
+    padding-bottom: 20px;
+    padding-top: 94px;
+}
+.container-main-buttons {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+.buttons-list {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    color: var(--first-color);
+    background-color: var(--third-background-color);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buttons-item:not(:last-child) {
+    margin-right: 8px;
 }
 /* ===========Hero================== */
 .section-hero {
@@ -207,37 +259,6 @@ img {
 .services-icon {
     width: 270px;
     height: 120px;
-}
-/* ===========main:buttons=========== */
-.section-main-buttons {
-    background-color: var(--first-background-color);
-    padding-bottom: 20px;
-    padding-top: 94px;
-}
-.container-main-buttons {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px; 
-}
-.buttons-list {
-    display: flex;
-    justify-content: center;
-}
-.btn {
-    padding: 6px 22px;
-    font-weight: 500;
-    line-height: 26px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: none;
-    color: var(--first-color);
-    background-color: var(--third-background-color);
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.buttons-item:not(:last-child) {
-    margin-right: 8px;
 }
 /* ===========main-cards=========== */
 .section-main-cards {
@@ -673,39 +694,13 @@ img {
     color: var(--fourth-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.link:hover,
-.link:focus {
-    cursor: var(--first-cursor);
-    color:var(--third-color);
-}
 .address-link:hover,
 .address-link:focus {
     cursor:var(--first-cursor);
     color:var(--third-color);
 }
-.contact-link:hover,
-.contact-link:focus {
-    cursor:var(--first-cursor);
-    color:var(--third-color);
-    fill:var(--third-color);
-}
-.link,
-.address-link,
-.contact-link {
-    text-decoration: none;
+.address-link {
     font-size: 14px;
-}
-.link {
-    color:var(--first-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-link {
-    color:var(--second-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link {
     color:var(--fourth-color);
@@ -717,20 +712,13 @@ img {
 .address {
     font-style: normal;
 }
-.logo,
-.header-logo {
+.logo {
     text-decoration: none;
     font-size: 26px;
     font-weight: 700;
 }
 .logo {
     color: var(--fourth-color);
-}
-.header-logo {
-    color:var(--first-color);
-}
-span {
-    color:var(--third-color);
 }
 /* ============================ */
 .modal-form {

@@ -234,12 +234,12 @@ span {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-title {
+.socialmedia__title {
     color: var(--fourth-color);
     font-size: 14px;
     font-weight: 700
 }
-.social-title {
+.socialmedia__title {
     display: block;
     padding-left: 70px;
     padding-top: 72px;

@@ -208,7 +208,7 @@ span {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-links {
+.socialmedia__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,12 +217,12 @@ span {
     padding-bottom: 100px;
     margin-left: 70px;
 }
-.social-icon {
+.socialmedia__icon {
     width: 20px;
     height: 20px;
     fill: var(--fourth-color);
 }
-.social-link {
+.socialmedia__link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -237,30 +237,22 @@ span {
 .socialmedia__title {
     color: var(--fourth-color);
     font-size: 14px;
-    font-weight: 700
-}
-.socialmedia__title {
+    font-weight: 700;
     display: block;
     padding-left: 70px;
     padding-top: 72px;
 }
-
-.address-link-mail {
-    display: block;
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-.social-link:hover,
-.social-link:focus {
+.socialmedia__link:hover,
+.socialmedia__link:focus {
     background-color: var(--third-color);
 }
-.footer-form {
+.footer__form {
     display: flex;
     flex-direction: column;
     margin-top: 72px;
     margin-left: 77px;
 }
-.input-label {
+.form__title {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -268,7 +260,10 @@ span {
     display: flex;
     padding-bottom: 20px;
 }
-.input-email {
+.form__newsletter {
+    display: flex;
+}
+.form__input {
     width: 358px;
     height: 50px;
     box-sizing: border-box;
@@ -280,7 +275,7 @@ span {
     font-size: 16px;
     font-weight: 400;
 }
-.btn-footer-form {
+.form__button {
     width: 200px;
     height: 50px;
     border: none;
@@ -296,17 +291,14 @@ span {
     align-items: center;
     justify-content: center;
 }
-.social-icon-send {
+.form__icon {
     width: 24px;
     height: 24px;
     margin-left: 24px;
 }
-.btn-footer-form:hover,
-.btn-footer-form:focus {
+.form__button:hover,
+.form__button:focus {
     cursor: var(--first-cursor);
-}
-.form-newsletter {
-    display: flex;
 }
 /* ===========portfolio buttons=========== */
 .buttons {
@@ -429,6 +421,11 @@ span {
     font-size: 44px;
     font-weight: 900;
     color: var(--fourth-color);
+}
+.address-link-mail {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 /* ===========lorem ipsum=========== */
 .services {

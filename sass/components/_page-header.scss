@@ -23,11 +23,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-}
-.link:hover,
-.link:focus {
+
+        &:hover,
+        &:focus {
     cursor: var(--first-cursor);
     color:var(--third-color);
+        }
 }
 .link--underline::after {
     content: "";
@@ -52,21 +53,28 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        cursor:var(--first-cursor);
+        color:var(--third-color);
+        fill:var(--third-color);
+        }
 }
+
 .header__phone {
     display: flex;
     align-items: center;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__mail:hover,
-.header__mail:focus,
-.header__phone:hover,
-.header__phone:focus {
-    cursor:var(--first-cursor);
-    color:var(--third-color);
-    fill:var(--third-color);
+
+        &:hover,
+        &:focus {
+        cursor:var(--first-cursor);
+        color:var(--third-color);
+        fill:var(--third-color);
+        }
 }
 .mail__icon {
     width: 16px;
@@ -86,12 +94,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mail__link:hover,
-.phone__link:hover,
-.mail__link:focus,
-.phone__link:focus {
-    cursor:var(--first-cursor);
-    color:var(--third-color);
-    fill:var(--third-color);
+
+        &:hover,
+        &:focus {
+        cursor:var(--first-cursor);
+        color:var(--third-color);
+        fill:var(--third-color);
+        }
 }

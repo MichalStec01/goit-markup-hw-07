@@ -29,6 +29,11 @@
     position: absolute;
     top: 8px;
     right: 8px;
+
+        &:hover,
+        &:focus {
+        cursor: var(--first-cursor);
+        }
 }
 .modal__icon {
     width: 11px;
@@ -38,10 +43,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.modal__button:hover,
-.modal__button:focus {
-    cursor: var(--first-cursor);
-}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;

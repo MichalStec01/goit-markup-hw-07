@@ -55,50 +55,6 @@
   --list-style-type: none;
 }
 
-body {
-  font-family: var(--first-font);
-  color: var(--first-color);
-}
-
-ul,
-ol {
-  list-style-type: var(--list-style-type);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul,
-ol,
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-}
-
-span {
-  color: var(--third-color);
-}
-
 .header {
   background-color: var(--fourth-background-color);
   border-bottom: 1px solid #ECECEC;
@@ -911,5 +867,49 @@ span {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+body {
+  font-family: var(--first-font);
+  color: var(--first-color);
+}
+
+ul,
+ol {
+  list-style-type: var(--list-style-type);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: var(--third-color);
 }
 /*# sourceMappingURL=main.css.map */

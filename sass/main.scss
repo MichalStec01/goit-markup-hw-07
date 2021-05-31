@@ -1,8 +1,8 @@
 @import './components/buttons';
 @import './components/container';
 @import './utils/variables';
-@import './components/page-header';
-@import './components/page-footer';
+@import './components/header';
+@import './components/footer';
 @import './components/section-buttons';
 @import './components/section-gallery';
 @import './components/page-hero';
@@ -12,3 +12,4 @@
 @import './components/section-customers';
 @import './components/section-backdrop';
 @import './components/modal';
+@import "./base/common.scss";
